@@ -1,0 +1,10 @@
+#!/vagrant/django-andy/bin/python
+# EASY-INSTALL-ENTRY-SCRIPT: 'wagtail==0.8.4','console_scripts','wagtail'
+__requires__ = 'wagtail==0.8.4'
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.exit(
+        load_entry_point('wagtail==0.8.4', 'console_scripts', 'wagtail')()
+    )
